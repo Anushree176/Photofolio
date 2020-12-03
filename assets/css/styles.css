@@ -1,0 +1,284 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+}
+
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+}
+
+body {
+      font-family: "Helvetica Neue", sans-serif;
+      font-weight: lighter;
+      align-items: center;
+      justify-content: center;
+}
+
+.large-wrapper.darkmode {
+      background: #172644;
+      color: white;
+}
+
+.hero {
+      background: url(../img/hero.jpg) no-repeat 50% 50%;
+      background-size: cover;
+      height: 100vh;
+}
+
+.hero-content {
+      padding-top: 15%;
+      padding-left: 50%;
+      position: absolute;
+}
+
+.hero-content h1 {
+      margin-bottom: 0px;
+      margin-top: 0px;
+      color: white;
+      font-size: 100px;
+      font-weight: 50;
+      text-shadow: 0 15px 15px #fff;
+}
+
+.hero-content h1.darkmode {
+      color: #172644;
+}
+
+.hero-content h1::before {
+      content: 'PHOTOFOLIO';
+      position: absolute;
+      color: #172644;
+      width: 0;
+      overflow: hidden;
+      transition: 1s;
+}
+
+.hero-content h1:hover::before {
+      width: 100%;
+}
+
+.hero-content h1.darkmode::before {
+      content: 'PHOTOFOLIO';
+      position: absolute;
+      color: #fff;
+      width: 0;
+      overflow: hidden;
+      transition: 1s;
+}
+
+.hero-content h1.darkmode:hover::before {
+      width: 100%;
+}
+
+.content {
+      width: 94%;
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+}
+
+.logo {
+      line-height: 35px;
+      position: fixed;
+      float: left;
+      margin: 16px 46px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 2px;
+      text-shadow: 0 0px 30px #000;
+}
+
+.logo.darkmode {
+      color: #FFF;
+}
+
+nav {
+      z-index: 10;
+      width: 100%;
+      line-height: 30px;
+      overflow: hidden;
+      position: absolute;
+}
+
+nav ul {
+      line-height: 35px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+}
+
+.btn.darkmode:hover, .btn.darkmode:active {
+      color: white;
+}
+
+#dark.darkmode {
+      color: white;
+}
+
+button {
+      color: #c49102;
+}
+
+button.darkmode {
+      background: #172644;
+      color: white;
+}
+
+.func_btn {
+      background-color: #172644;
+      color: #FFF;
+      font-size: 2rem;
+}
+
+.func_btn:hover, .func_btn:active {
+      transform: scale(1.1);
+      box-shadow: 0 5px 15px #172644;
+      background-color: #172644;
+      color: #FFF;
+}
+
+.func_btn.darkmode {
+      background-color: #f2e3aa;
+      color: #000;
+}
+
+.func_btn.darkmode:hover {
+      transform: scale(1.1);
+      box-shadow: 0 5px 15px #f2e3aa;
+      background-color: #f2e3aa;
+      color: #000;
+}
+
+nav.black ul {
+      background: #000;
+}
+
+nav.black.darkmode ul {
+      background: #f2e3aa;
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;
+}
+
+nav ul li.darkmode a {
+      color: #FFF;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+      letter-spacing: 3px;
+      text-shadow: 0 0px 30px #000;
+}
+
+nav ul:hover li a {
+      filter: blur(1px);
+}
+
+nav ul li a:hover {
+      text-decoration: none;
+      color: #fff;
+      font-size: 20px;
+      filter: blur(0px);
+      text-shadow: 0 5px 15px #fff;
+}
+
+nav ul li.darkmode a:hover {
+      font-size: 20px;
+      text-decoration: none;
+      color: #fff;
+      filter: blur(0px);
+      text-shadow: 0 5px 15px #172644;
+}
+
+.menu-icon {
+      line-height: 35px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+
+@media(max-width: 786px) {
+      header {
+            background: url(../img/hero.jpg) no-repeat 50% 25%;
+      }
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+      nav ul {
+            max-height: 0px;
+            background: #000;
+      }
+      nav.black ul {
+            background: #000;
+      }
+      .showing {
+            max-height: 34em;
+      }
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+      .menu-icon {
+            display: block;
+      }
+}
+
+img {
+      width: 100%;
+}
+
+.glow-button:hover {
+      transform: scale(1.1);
+      color: #c49102;
+      box-shadow: 0 5px 15px #fff;
+}
+
+.glow-button.darkmode:hover {
+      transform: scale(1.1);
+      color: #c49102;
+      box-shadow: 0 5px 15px #172644;
+}
+
+#footer {
+      display: table-row;
+}
+
+.footer__items {
+      display: table-cell;
+      vertical-align: top;
+      padding-left: 200px;
+      padding-top: 150px;
+}
+
+.footer__logo {
+      display: table-cell;
+      vertical-align: top;
+      margin-left: 100px;
+      margin-top: 140px;
+      margin-bottom: 140px;
+}
